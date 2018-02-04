@@ -21,12 +21,12 @@ class Tag(models.Model):
 
 
 class Book(models.Model):
-    name = models.CharField('Book Title', max_length=200)
-    pud_date = models.DateField('date published')
+    title = models.CharField('Book Title', max_length=200)
+    pub_date = models.DateField('date published')
     description = models.CharField(max_length=1000)
     thumbnail = models.ImageField(upload_to='thumbnails', blank=True)
     author = models.ForeignKey(Author, on_delete=models.PROTECT)
     tags = models.ManyToManyField(Tag, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.title
