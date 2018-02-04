@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': '127.0.0.1',
-        'NAME': 'OloloRodriguez$djangotest',
+        'NAME': 'OloloRodriguez$library',
         'USER': 'OloloRodriguez',
         'PASSWORD': db_pswrd,
         'PORT': get_local_bind_port()
